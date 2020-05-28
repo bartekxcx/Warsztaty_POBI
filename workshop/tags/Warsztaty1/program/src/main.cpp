@@ -1,0 +1,33 @@
+#include <iostream>
+#include <memory>
+#include "model/Client.hpp"
+
+using namespace std;
+
+int main()
+{ 
+	Client Przemo("Przemo", "Loczek", "990610408");
+    /*Przemo.firstName = "Przemo";
+    Przemo.lastName = "Loczek";
+    Przemo.personalID = "990610408";*/
+
+    Przemo.setFirstName("Przemo");
+    Przemo.setLastName("Loczek");
+    cout<<Przemo.getClientInfo()<<endl;
+    
+	Client * Jacek = new Client ("Jacek", "Kowalski", "940612434");
+    /*Jacek->firstName = "Jacek";
+    Jacek->lastName = "Kowalski";
+    Jacek->personalID = "940612434";*/
+    
+    Jacek->setFirstName("Jacek");
+    Jacek->setLastName("Kowalski");
+    cout<<Jacek->getClientInfo()<<endl;
+
+    
+    
+    delete Jacek;
+
+	
+		return 0;
+}

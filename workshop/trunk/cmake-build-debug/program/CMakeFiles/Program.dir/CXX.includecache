@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../library/include/model/Address.h
+string
+-
+
+../library/include/model/Client.h
+string
+-
+model/Address.h
+../library/include/model/model/Address.h
+vector
+-
+
+/home/student/Baja/jasitczak/workshop/trunk/program/src/main.cpp
+iostream
+-
+memory
+-
+model/Client.h
+/home/student/Baja/jasitczak/workshop/trunk/program/src/model/Client.h
+

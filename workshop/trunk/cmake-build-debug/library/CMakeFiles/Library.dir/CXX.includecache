@@ -18,23 +18,13 @@ model/Address.h
 vector
 -
 
-../library/include/model/Rent.h
+/home/student/Baja/jasitczak/workshop/trunk/library/src/model/Client.cpp
+iostream
+-
+string
+-
+vector
+-
 model/Client.h
-../library/include/model/model/Client.h
-model/Vehicle.h
-../library/include/model/model/Vehicle.h
-string
--
-
-../library/include/model/Vehicle.h
-string
--
-
-/home/student/Baja/jasitczak/workshop/trunk/library/test/RentTest.cpp
-boost/test/unit_test.hpp
--
-model/Rent.h
--
-model/Vehicle.h
-/home/student/Baja/jasitczak/workshop/trunk/library/test/model/Vehicle.h
+/home/student/Baja/jasitczak/workshop/trunk/library/src/model/model/Client.h
 

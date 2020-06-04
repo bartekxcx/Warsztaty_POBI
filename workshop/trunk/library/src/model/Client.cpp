@@ -41,9 +41,19 @@ const Address* Client::getAddressInfo() const
 }
 
 const std::string Client::getClientInfo()  const
-    {   
-        return m_firstName+" "+m_lastName+" "+m_personalID+" "+m_address->getAddressInfo()+" "+m_currentRents.;
+    {
+        return m_firstName+" "+m_lastName+" "+m_personalID+" "+m_address->getAddressInfo();
     }
+const std::string Client::getFullClientInfo()  const
+{
+    std::string Rents;
+    if(m_currentRents.size()!=0) {
+        for (int i = 0; i < m_currentRents.size(); i++) {
+            Rents = Rents + m_currentRents[i]->getRentInfo;
+        }
+    }
+    return getClientInfo()+Rents;
+}
 const std::vector < Rent* > Client::getCurrentRents() const
 {
     return m_currentRents;

@@ -5,7 +5,7 @@
 class Rent;
 
 class Client
-{ 
+{
    private:
     std::string m_firstName;
     std::string m_lastName;
@@ -23,6 +23,7 @@ class Client
     void setAddressInfo (Address*);
     const Address* getAddressInfo() const;
     const std::string getClientInfo() const;
+    const std::string getFullClientInfo()  const;
     const std::vector < Rent* > getCurrentRents() const;
     void addToCurrentRents(Rent*);
     Client(const std::string &, const std::string &, const std::string &, Address*);

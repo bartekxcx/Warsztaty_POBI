@@ -21,6 +21,7 @@ struct TestSuiteRentFixture {
     ~TestSuiteRentFixture() {
         delete testRentClient;
         delete testRentVehicle;
+        delete testAddress;
     }
 
 
@@ -43,9 +44,9 @@ BOOST_FIXTURE_TEST_SUITE(TestSuiteRent,TestSuiteRentFixture)
         BOOST_CHECK_EQUAL(r.getRentInfo(), "1234 Jan Kowalski 13372137 Lodz Wesola 12 ELW 1337 691337");
     }
 
-    BOOST_AUTO_TEST_CASE(getRentInfo) {
-        Rent r(1234, testRentClient, testRentVehicle);
-        BOOST_CHECK_EQUAL(r.getRentInfo(), "1234 Jan Kowalski 13372137 Lodz Wesola 12 ELW 1337 691337");
+    BOOST_AUTO_TEST_CASE(RentAdd) {
+        Rent rent(1234, testRentClient, testRentVehicle);
+        BOOST_CHECK_EQUAL(testRentClient->getCurrentRents().back()->getRentInfo(),rent.getRentInfo());
     }
 
 BOOST_AUTO_TEST_SUITE_END()

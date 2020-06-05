@@ -1,8 +1,10 @@
 #include <iostream>
 #include <memory>
 #include "model/Client.h"
+#include "model/Address.h"
 
-using namespace std;
+using std::cout;
+using std::endl;
 
 int main()
 {
@@ -46,8 +48,5 @@ int main()
     delete Testowy;
     delete address_test;
 
-    Testowy->getAddressInfo();
-
-	
-		return 0;
+	return 0;
 }

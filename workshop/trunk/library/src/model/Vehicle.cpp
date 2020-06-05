@@ -17,19 +17,19 @@ void Vehicle::setPlateNumber (const std::string &t_Numer_Rejestracyjny)
 {
     if(!t_Numer_Rejestracyjny.empty()) m_plateNumber=t_Numer_Rejestracyjny;
 }
-void Vehicle::setBasePrice (const unsigned int &t_CenaBazowa)
+void Vehicle::setBasePrice (const unsigned int & t_basePrice)
 {
-    m_basePrice=t_CenaBazowa;
+    m_basePrice = t_basePrice;
 }
-const std::string Vehicle::getPlateNumber() const
+std::string Vehicle::getPlateNumber() const
 {
     return m_plateNumber;
 }
-const unsigned int Vehicle::getBasePrice() const
+unsigned int Vehicle::getBasePrice() const
 {
     return m_basePrice;
 }
-const std::string Vehicle::getVehicleInfo() const
+std::string Vehicle::getVehicleInfo() const
 {
     return m_plateNumber +" "+ std::to_string(m_basePrice);
 }

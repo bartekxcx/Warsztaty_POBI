@@ -3,6 +3,8 @@
 //
 
 #include "model/Rent.h"
+#include "model/Client.h"
+#include "model/Vehicle.h"
 #include <iostream>
 #include <string>
 
@@ -14,11 +16,11 @@ Rent::Rent(const unsigned int &t_Identyfikator, Client* t_klient, Vehicle* t_aut
     m_RentClient->addToCurrentRents(this);
 
 }
-const std::string Rent::getRentInfo() const
+std::string Rent::getRentInfo() const
 {
     return std::to_string(m_RentID)+" "+m_RentClient->getClientInfo()+" "+m_RentVehicle->getVehicleInfo();
 }
-const unsigned int Rent::getRentID() const
+unsigned int Rent::getRentID() const
 {
     return m_RentID;
 }

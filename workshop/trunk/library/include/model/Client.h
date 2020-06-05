@@ -1,8 +1,8 @@
 #include <string>
-#include "model/Address.h"
 #include <vector>
 
 class Rent;
+class Address;
 
 class Client
 {
@@ -22,8 +22,8 @@ class Client
     void setLastName (const std::string &);
     void setAddressInfo (Address*);
     const Address* getAddressInfo() const;
-    const std::string getClientInfo() const;
-    const std::string getFullClientInfo()  const;
+    std::string getClientInfo() const;
+    std::string getFullClientInfo()  const;
     const std::vector < Rent* > getCurrentRents() const;
     void addToCurrentRents(Rent*);
     Client(const std::string &, const std::string &, const std::string &, Address*);

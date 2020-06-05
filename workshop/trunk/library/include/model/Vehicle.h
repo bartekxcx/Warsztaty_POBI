@@ -15,11 +15,9 @@ public:
     Vehicle(const std::string &, const unsigned int &);
     void setPlateNumber (const std::string &);
     void setBasePrice (const unsigned int &);
-    const std::string getPlateNumber() const;
-    const unsigned int getBasePrice() const;
-    const std::string getVehicleInfo() const;
-
-
+    std::string getPlateNumber() const;
+    unsigned int getBasePrice() const;
+    std::string getVehicleInfo() const;
 };
 
 

@@ -2,8 +2,10 @@
 // Created by student on 27.05.2020.
 //
 #include <boost/test/unit_test.hpp>
-#include <model/Rent.h>
+#include "model/Rent.h"
 #include "model/Vehicle.h"
+#include "model/Address.h"
+#include "model/Client.h"
 
 struct TestSuiteRentFixture {
     const unsigned int testRentID = 1234;

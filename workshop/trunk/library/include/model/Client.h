@@ -27,7 +27,6 @@ class Client
     const std::vector < Rent* > getCurrentRents() const;
     void addToCurrentRents(Rent*);
     Client(const std::string &, const std::string &, const std::string &, Address*);
-   // ~Client();
 };
 
 

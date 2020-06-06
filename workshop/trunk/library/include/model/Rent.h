@@ -17,16 +17,21 @@ class Vehicle;
 
 class Rent {
 private:
+    pt::ptime m_beginTime, m_endTime;
+
     unsigned int m_RentID;
     Client *m_RentClient;
     Vehicle *m_RentVehicle;
 
 public:
-    Rent(const unsigned int &, Client*, Vehicle*);
+    Rent(const unsigned int &, Client*, Vehicle*, const pt::ptime& );
     std::string getRentInfo() const;
     unsigned int getRentID() const;
     const Client* getRentClient() const;
     const Vehicle* getRentVehicle() const;
+
+    pt::ptime getBeginTime() const;
+    pt::ptime getEndTime() const;
 };
 
 

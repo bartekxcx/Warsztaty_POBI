@@ -10,6 +10,7 @@ class Vehicle {
 private:
     std::string m_plateNumber;
     unsigned int m_basePrice;
+    bool m_rented = false;
 
 public:
     Vehicle(const std::string &, const unsigned int &);
@@ -18,6 +19,9 @@ public:
     std::string getPlateNumber() const;
     unsigned int getBasePrice() const;
     std::string getVehicleInfo() const;
+    bool isRented() const;
+    void setRented();
+
 };
 
 

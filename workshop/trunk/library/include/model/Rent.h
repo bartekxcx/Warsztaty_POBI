@@ -7,9 +7,13 @@
 
 #include <string>
 #include "model/Vehicle.h"
+#include <boost/date_time.hpp>
+
+namespace pt = boost::posix_time;
+namespace gr = boost::gregorian;
 
 class Client;
-//class Vehicle;
+class Vehicle;
 
 class Rent {
 private:

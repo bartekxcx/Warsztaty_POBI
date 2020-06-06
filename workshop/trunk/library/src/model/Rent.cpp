@@ -14,6 +14,7 @@ Rent::Rent(const unsigned int &t_Identyfikator, Client* t_klient, Vehicle* t_aut
     m_RentClient=t_klient;
     m_RentVehicle=t_auto;
     m_RentClient->addToCurrentRents(this);
+    m_RentVehicle->setRented();
 
 }
 std::string Rent::getRentInfo() const

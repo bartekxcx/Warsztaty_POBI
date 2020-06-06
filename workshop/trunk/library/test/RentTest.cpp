@@ -38,6 +38,8 @@ BOOST_FIXTURE_TEST_SUITE(TestSuiteRent,TestSuiteRentFixture)
         BOOST_TEST(testRentID == r.getRentID());
         BOOST_TEST(testRentClient == r.getRentClient());
         BOOST_TEST(testRentVehicle == r.getRentVehicle());
+        BOOST_CHECK_EQUAL(testRentVehicle->isRented(), true);
+
     }
 
 

@@ -21,7 +21,6 @@ public:
     std::string getVehicleInfo() const;
     bool isRented() const;
     void setRented();
-
 };
 
 
